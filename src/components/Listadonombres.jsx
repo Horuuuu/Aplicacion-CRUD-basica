@@ -43,8 +43,8 @@ const editarNombre= ( e) =>{
 }
 
     return (
-        <div>
-            <h2>Apilcacion CRUD Basica</h2>
+        <div class="p-3 mb-2 bg-warning text-dark">
+            <h2 >Apilcacion CRUD Basica</h2>
             <div className="row">
             <div className="col">
                 
