@@ -1,70 +1,9 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h4>App de registro y listado de nombres hecha con  React Js</h4>
+![]()
+<p>Instale en las dependencias Bootstrap(lo importe en el index.js para tenerlo disponible en todo el proyecto) y uniqid para generar id unicas para los nombres ,ya que para agregar un nombre nuevo lo puse en un objeto, cada objeto con su id unico y nombre.Asi a pesar de haber dos nombres iguales,React los reconocera como diferentes.
+<p>Agregue un componente para el formulario y este esta divido en dos ,una parte para registrar el nombre y otra para listarlo.Ambos los hice con Bootstrap.</p>
+Use el hook useState para manejar el estado de los nombres en el formulario y tambien para la lista de nombres.Utilize el evento onChange para vincular los nombres  del formulario y el evento onSubmit para capturar los nombres.</p<
+<p>Para mostar los nombres en la lista  use el metodo map para recorrer el arreglo con los nombres ,le puse el id  a la key y una funcion con un li con el nombre.</p>
+<p>Para borrar los nombres registrados , use el metodo filter en el arreglo.En un boton con el evento onClick , con una funcion que tome el id y nombres singulares y elimine ese exactamente.</p>
+<p>Para editar un nombre, a travez de useState ,con estado inicial falso (porque no se puede editar algo que no existe todavia),cree una variable que cambie el estado a verdadero y en un nuevo boton con el metodo onClick y una funcion con dos parametros un  id y nombre especifico.</p>
+Para comprobar que el campo nombre no esta vacio al registar ,use una condicion en la que el negativo ! de nombre no se pueda rellenar y lo hice con el metodo trim y luego a travez de una alerta avisar del error.
